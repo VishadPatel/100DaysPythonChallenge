@@ -21,16 +21,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to the treasure island.\nYour mission is to find treasure.")
-move = input("Do you want to move left or right? Type L for left and R for right: ")
-if move == 'R' or move == 'r':
+move = input("Do you want to move left or right? Type L for left and R for right: ").lower()
+if move == 'r':
     print("Game over!!!")
 else:
-    motion = input("Do you want to swim or wait? Type S for Swim or W for wait: ")
-    if motion =='W' or motion =='w':
+    motion = input("Do you want to swim or wait? Type S for Swim or W for wait: ").lower()
+    if motion =='w':
         print("Game over!!!")
     else:
-        door_color = input("Which door you want go with? Type R for red, Y for Yellow and B for blue: ")
-        if door_color == 'Y' or door_color=='y':
+        door_color = input("Which door you want go with? Type R for red, Y for Yellow and B for blue: ").lower()
+        if door_color=='y':
             print("You win the game!!!")
         else:
             print("You loose the game. Game over!!!")
